@@ -1,1 +1,1 @@
-https://bbdd-osf-cubo-fxymdxt7acm2dfpdeja6oe.streamlit.app/
+https://cdatos-interfazcubolab.streamlit.app/
