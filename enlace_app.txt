@@ -1,13 +1,15 @@
 # INTERFAZ EMOCIONES CON PREDICCIÓN
 
-https://cdatos-emociones.streamlit.app/
+  https://cdatos-emociones.streamlit.app/
 
 El código crea una aplicación interactiva en Streamlit para analizar y predecir emociones de usuarios basándose en datos descargados desde un servidor OSF. Los datos se cargan en tiempo real y pueden actualizarse manualmente. Los usuarios pueden seleccionar un paciente específico y visualizar sus emociones en una gráfica escalonada generada con Plotly, que muestra detalles adicionales como intervenciones asociadas. La interfaz incluye controles para personalizar la visualización y explorar los datos de manera sencilla.
 Además, utiliza un modelo SARIMAX para predecir emociones promedio diarias para los próximos días (hasta 30), integrando estas predicciones en la gráfica junto con los datos históricos. Las predicciones también se muestran en una tabla interactiva. La aplicación combina análisis histórico, predicción y visualización de datos para ofrecer una experiencia intuitiva y completa.
 
 
 
-https://cdatos-general-tablas.streamlit.app/
+# INTERFAZ TODAS TABLAS CON ANÁLISIS
+
+  https://cdatos-general-tablas.streamlit.app/
 
 Este código implementa una aplicación interactiva en Streamlit para explorar y analizar datos relacionados con la salud, descargados desde un servidor OSF. La aplicación carga múltiples tablas (como enfermeras, pacientes, alertas, centros, medidas, entre otras) en su estado interno y permite a los usuarios seleccionar una tabla para visualizar y analizar sus datos. Para cada tabla, se ofrecen opciones de análisis específicos como distribuciones, gráficos de barras, histogramas y gráficos de líneas, adaptados a las columnas y la naturaleza de los datos.
 
