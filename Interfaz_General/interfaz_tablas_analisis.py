@@ -105,45 +105,16 @@ elif tabla_seleccionada == "Pacientes":
     st.write("### Tabla: Pacientes")
     st.dataframe(st.session_state.pacientes.head())
 
-    opcion = st.selectbox("Selecciona lo que deseas realizar:", ["Análisis", "Predicciones"])
+    analisis = st.selectbox("Selecciona el análisis para Pacientes:", 
+                            ["Distribución por Centro", "Pacientes con Cubo"])
 
-    if opcion == "Análisis":
-        analisis = st.selectbox("Selecciona el análisis para Pacientes:", 
-                                ["Distribución por Centro", "Pacientes con Cubo"])
+    if analisis == "Distribución por Centro":
+        st.write("Cantidad de Pacientes por Centro")
+        st.bar_chart(st.session_state.pacientes["id_centro"].value_counts())
 
-        if analisis == "Distribución por Centro":
-            st.write("Cantidad de Pacientes por Centro")
-            st.bar_chart(st.session_state.pacientes["id_centro"].value_counts())
-
-        elif analisis == "Pacientes con Cubo":
-            st.write("Distribución de Pacientes con o sin Cubo")
-            st.bar_chart(st.session_state.pacientes["tieneCubo"].value_counts())
-
-    elif opcion == "Predicciones":
-        st.write("### Predicción de incorporación de Pacientes por Fecha")
-
-        # Asegúrate de que la columna de fecha esté en formato datetime
-        st.session_state.pacientes["fecha"] = pd.to_datetime(st.session_state.pacientes["fecha"], errors="coerce")
-
-        # Contar el número de pacientes por fecha
-        pacientes_por_fecha = st.session_state.pacientes["fecha"].value_counts().sort_index()
-
-        # Gráfico de líneas para mostrar la evolución histórica
-        st.line_chart(pacientes_por_fecha)
-
-        # Predicción de series temporales (ejemplo simple)
-        
-
-        # Modelo de suavizado exponencial para la predicción
-        modelo = ExponentialSmoothing(pacientes_por_fecha, trend="add", seasonal=None)
-        ajuste = modelo.fit()
-
-        # Predicción para los próximos tres meses (90 días)
-        prediccion = ajuste.forecast(90)
-
-        # Gráfico de la predicción
-        st.write("**Predicción para los próximos tres meses**")
-        st.line_chart(prediccion)
+    elif analisis == "Pacientes con Cubo":
+        st.write("Distribución de Pacientes con o sin Cubo")
+        st.bar_chart(st.session_state.pacientes["tieneCubo"].value_counts())
 
 elif tabla_seleccionada == "Alertas":
     st.write("### Tabla: Alertas")
