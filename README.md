@@ -3,7 +3,7 @@
 - Descripción
   
 Aplicación desarrollada con Streamlit que permite analizar y visualizar datos relacionados con enfermeras, pacientes y los cubos empleados.
-La aplicación está diseñada para facilitar la interacción y actualización de los datos almacenados en servidores externos. Los usuarios pueden seleccionar diferentes tablas y realizar análisis específicos, visualizando la información de manera clara y comprensible.
+La aplicación está diseñada para facilitar la interacción y actualización de los datos almacenados en servidores externos. Los usuarios pueden seleccionar diferentes tablas y realizar análisis específicos, visualizando la información de manera clara y comprensible. Además, se permiten ver predicciones de las emociones para futuros dias y se implementa un análisis de texto de los comentarios. Esto último se lleva a cabo en la base de datos creada a partir de las emociones de los residentes de Medialab durante las dos primeras semanas de diciembre de 2024.
 
 
 - Características
@@ -16,7 +16,4 @@ c) Interfaz intuitiva: Desplegables y botones para navegar fácilmente entre los
 
 d) Opciones de análisis o predicción: Selección de análisis específicos para cada tabla con gráficos y conclusiones presentadas de forma interactiva. Por otro lado, se permite visualizar algunas predicciones.
 
-
-- Funcionalidades Futuras
-  
-Implementación de predicciones basadas en series temporales para datos de pacientes. (Mejorar e implementar más).
+e) Visualización a través de "nubes de palabras" según la emoción a partir de los comentarios/intervenciones de texto proporcionadas.
