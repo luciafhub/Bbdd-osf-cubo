@@ -12,7 +12,7 @@ El objetivo principal es explorar cómo varían las emociones a lo largo del tie
   https://cdatos-emociones.streamlit.app/
 
 El código crea una aplicación interactiva en Streamlit para analizar y predecir emociones de usuarios basándose en datos descargados desde un servidor OSF. Los datos se cargan en tiempo real y pueden actualizarse manualmente. Los usuarios pueden seleccionar un paciente específico y visualizar sus emociones en una gráfica escalonada generada con Plotly, que muestra detalles adicionales como intervenciones asociadas. La interfaz incluye controles para personalizar la visualización y explorar los datos de manera sencilla.
-Además, utiliza un modelo SARIMAX para predecir emociones promedio diarias para los próximos días (hasta 30), integrando estas predicciones en la gráfica junto con los datos históricos. Las predicciones también se muestran en una tabla interactiva. La aplicación combina análisis histórico, predicción y visualización de datos para ofrecer una experiencia intuitiva y completa.
+Además, utiliza un modelo para predecir emociones promedio diarias para los próximos días (hasta 30), integrando estas predicciones en la gráfica junto con los datos históricos. Las predicciones también se muestran en una tabla interactiva. La aplicación combina análisis histórico, predicción y visualización de datos para ofrecer una experiencia intuitiva y completa.
 
 
 
