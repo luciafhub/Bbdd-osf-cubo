@@ -11,7 +11,7 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 import plotly.graph_objects as go
 
 # Ruta del archivo local
-file_path = "./Medidas_comentarios.csv"  # Cambia la ruta según tu archivo
+file_path = "./df_real_descargado.csv"  # Cambia la ruta según tu archivo
 
 # Carga del archivo CSV
 @st.cache_data
