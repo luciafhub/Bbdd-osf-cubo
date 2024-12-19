@@ -1,4 +1,5 @@
 import streamlit as st
+import os
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
@@ -11,7 +12,8 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 import plotly.graph_objects as go
 
 # Ruta del archivo local
-file_path = os.path.join(os.path.dirname(__file__), "df_real_descargado.csv")
+file_path = "/mount/src/CDatos/Interfaz_Residentes/df_real_descargado.csv"
+
 
 # Carga del archivo CSV
 @st.cache_data
