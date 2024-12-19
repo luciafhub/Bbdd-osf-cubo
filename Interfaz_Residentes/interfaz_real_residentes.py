@@ -12,8 +12,6 @@ from statsmodels.tsa.statespace.sarimax import SARIMAX
 import plotly.graph_objects as go
 
 # Ruta del archivo local
-st.write("Ruta absoluta del archivo:", os.path.abspath("df_real_descargado.csv"))
-
 file_path = "/mount/src/cdatos/Interfaz_Residentes/df_real_descargado.csv"
 
 # Carga del archivo CSV
