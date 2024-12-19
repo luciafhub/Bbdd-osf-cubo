@@ -1,3 +1,9 @@
+# INTERFAZ DATOS REALES DE RESIDENTES (CON COMENTARIOS)
+
+Este proyecto analiza datos recopilados durante dos semanas sobre las emociones y comentarios de los residentes de MediaLab. El objetivo principal es explorar cómo varían las emociones a lo largo del tiempo y comprender la relación entre estas emociones y los comentarios proporcionados por los residentes.
+
+
+
 # INTERFAZ EMOCIONES CON PREDICCIÓN
 
   https://cdatos-emociones.streamlit.app/
